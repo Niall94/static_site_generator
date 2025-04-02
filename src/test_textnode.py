@@ -30,6 +30,8 @@ class TestTextNode(unittest.TestCase):
             "TextNode(This is a text node, text, https://www.boot.dev)", repr(node)
         )
 
+class TestTextNodeToHTMLNode(unittest.TestCase):
+
     def test_text(self):
         node = TextNode("This is a text node", TextType.TEXT)
         html_node = text_node_to_html_node(node)
